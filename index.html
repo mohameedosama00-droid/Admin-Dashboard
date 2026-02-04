@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Admin Dashboard</title>
+        <link rel="stylesheet" href="assets/Css/bootstrap.css">
+        <link rel="stylesheet" href="assets/Css/Style.css">
+    </head>
+    <body>
+        <div class="d-flex">
+  <!-- Sidebar -->
+  <aside class="sidebar p-3">
+    <h4>Admin</h4>
+    <ul>
+      <li>Dashboard</li>
+      <li>Users</li>
+      <li>Products</li>
+      <li>Orders</li>
+    </ul>
+  </aside>
+
+  <!-- Main -->
+  <main class="content p-4">
+    <h2>Dashboard</h2>
+
+    <div class="row my-4">
+      <div class="col-md-4">
+        <div class="card p-3">Users: <span id="usersCount">0</span></div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3">Orders: <span id="ordersCount">0</span></div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3">Revenue: $<span id="revenue">0</span></div>
+      </div>
+    </div>
+
+    <h4>Users</h4>
+    <input type="text" id="search" class="form-control mb-2" placeholder="Search user">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody id="usersTable"></tbody>
+    </table>
+  </main>
+</div>
+        <script src="assets/Js/bootstrap.js"></script>
+        <script src="assets/Js/Script.js"></script>
+    </body>
+</html>
